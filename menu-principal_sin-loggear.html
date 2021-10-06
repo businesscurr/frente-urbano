@@ -101,8 +101,18 @@
                                         </div>
                                         <input type="text" id="name" placeholder="Ejemplo Dato 1B">
                                     </div>
-                                    <div class="container-button">
+                                    <div class="container-label-range">
+                                        <p>Cifra C</p>
+                                    </div>
+                                    <div class="container-range">
+                                        <div class="inputDiv">
+                                            <div id="etiqueta"></div>
+                                            <input type="range" value="35" min="0" max="100" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="container-button container-w-arrow">
                                         <button class="btn btn-registro">Botón 1 de Datos</button>
+                                        <img src="./assets/icons/next-arrow.svg" alt="Flecha">
                                     </div>
                                 </form>
                             </div>
@@ -121,8 +131,9 @@
                                         </div>
                                         <input type="text" id="name" placeholder="Ejemplo Dato 2B">
                                     </div>
-                                    <div class="container-button">
+                                    <div class="container-button container-w-arrow">
                                         <button class="btn btn-registro">Botón 2 de Datos</button>
+                                        <img src="./assets/icons/next-arrow.svg" alt="Flecha">
                                     </div>
                                 </form>
                             </div>
@@ -141,18 +152,30 @@
                             <form class="">
                                 <div class="form-group-w-bor form-group-black pb-0">
                                     <div class="bg-label">
-                                        <label for="name">Dato 1A</label>
+                                        <label for="name">Nombre</label>
                                     </div>
-                                    <input type="text" id="name" placeholder="Ejemplo Dato 1A">
+                                    <input type="text" id="name" placeholder="Ejemplo Nombre">
                                 </div>                                        
                                 <div class="form-group-w-bor form-group-black pb-0">
                                     <div class="bg-label">
-                                        <label for="name">Dato 1B</label>
+                                        <label for="tlf">No. teléfono</label>
                                     </div>
-                                    <input type="text" id="name" placeholder="Ejemplo Dato 1B">
+                                    <input type="tel" id="tlf" placeholder="Ejemplo de teléfono">
                                 </div>
-                                <div class="container-button">
-                                    <button class="btn btn-registro">Botón 1 de Datos</button>
+                                <div class="form-group-w-bor form-group-black pb-0">
+                                    <div class="bg-label">
+                                        <label for="pass">Contraseña</label>
+                                    </div>
+                                    <input type="password" id="pass" placeholder="Ejemplo de contraseña">
+                                </div>
+                                <div class="container-not-robot">
+                                    <label for="robot">No soy un robot</label>
+                                    <input type="checkbox" name="robot" id="robot"  checked="checked">
+                                    <span class="checkmark"></span>
+                                </div>
+                                <div class="container-button container-w-arrow">
+                                    <button class="btn btn-registro">Botón 1 de Registro</button>
+                                    <img src="./assets/icons/next-arrow.svg" alt="Flecha">
                                 </div>
                             </form>
                         </div>
@@ -165,7 +188,6 @@
     <footer class="footer">
 
     </footer>
-
 
     <script src="./js/app.js"></script>
 </body>

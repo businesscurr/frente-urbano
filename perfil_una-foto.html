@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Perfil</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-nav">
+            <nav class="nav nav-w-li-lo">
+                <div class="container-burger-menu">
+                    <button class="dropbtn"><img src="./assets/icons/burger-menu.png" alt="Menú Hamburguesa"></button>
+                    <div class="dropdown-content">
+                        <h3>CONTACTO:</h3>
+                        <p>Teléfono: +123 456 789</p>
+                        <p>Correo: info@ejemplo.com</p>
+                    </div>
+                </div>
+                <div class="title-header-w-li-lg">
+                    <h1>TÍTULO</h1>
+                </div>
+                <div class="container-logout-nav">
+                    <a href="#" id="myBtn" class="nav-logout">LOG OUT</a>
+                </div>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content modal-content-log-out">
+                            <span class="close">&times;</span>
+                            <div class="container-title-logout-pop-up">
+                                <h2>LOG OUT</h2>
+                            </div>
+                            <div class="container-log-out-text">
+                                <p>TEXTO LOG OUT can vary to support the types of content they contain.</p>
+                            </div>
+                            <div class="container-button container-button-log-out">
+                                <button class="btn btn-registro">Botón - Log out</button>
+                            </div>
+                        </div>
+                      </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container container-white">
+            <div class="container-profile">
+                <div class="container-close-profile">
+                    <a href="./menu-loggeado-3.html" class="close-profile">&times;</a>
+                </div>
+                <div class="container-title-profile">
+                    <h2>PERFIL</h2>
+                </div>
+                <div class="container-main-profile">
+                    <div class="container-instruction-profile">
+                        <p>INSTRUCCIONES PERFIL can vary to support the types of content they contain. The following elements are commonly.</p>
+                    </div>
+                    <div class="container-img-user-profile">
+                        <a href="#">
+                            <div class="img-user-profile">
+                                <div class="contain-img-profile-user">
+                                    <img src="./assets/imgs/user-img.png" alt="User img">
+                                </div>
+                                <div class="agg-img-user-profile">
+                                    <img src="./assets/icons/plus.svg" alt="Plus img user">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <form action="" class="form-profile">
+                        <div class="form-group-w-bor form-group-white">
+                            <div class="bg-label">
+                                <label for="name-pr">Nombre</label>
+                            </div>
+                            <input type="text" id="name-pr" placeholder="Ejemplo Nombre">
+                        </div>
+                        <div id="form-group-textarea" class="form-group-w-bor form-group-white mb-0">
+                            <div class="bg-label">
+                                <label for="desc-profile">Descripción</label>
+                            </div>
+                            <textarea name="" id="desc-profile" placeholder="Ejemplo Descripción" class="textarea-profile" style="resize: none;"></textarea>
+                        </div>
+                        <div class="instructions-links-profile">
+                            <p>Instrucciones Links Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                        </div>
+                        <div class="form-link-profile">
+                            <input type="text" placeholder="Ejemplo Link Facebook">
+                        </div>
+                        <div class="form-link-profile">
+                            <input type="text" placeholder="Ejemplo Link Instagram">
+                        </div>
+                        <div class="form-link-profile">
+                            <input type="text" placeholder="Ejemplo Link LinkedIn">
+                        </div>
+                        <div class="form-link-profile">
+                            <input type="text" placeholder="Ejemplo Link Otro">
+                        </div>
+                        <div class="container-plus-links-profile">
+                            <a href="#">
+                                <img src="./assets/icons/plus-2.svg" alt="Plus 2">
+                            </a>
+                        </div>
+                        <div class="container-btn-profile">
+                            <a href="./menu-loggeado-3.html" class="btn">Guardar Cambios</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+    </main>
+    
+    <footer class="footer">
+
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
