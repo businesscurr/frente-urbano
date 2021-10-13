@@ -6,189 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Menú Principal - Sin Loggear</title>
+    <title>Document</title>
 </head>
 <body>
-
     <header class="header">
-        <div class="container-nav">
-            <nav class="nav">
-                <div class="container-burger-menu">
-                    <button class="dropbtn"><img src="./assets/icons/burger-menu.png" alt="Menú Hamburguesa"></button>
-                    <div class="dropdown-content">
-                        <h3>CONTACTO:</h3>
-                        <p>Teléfono: +123 456 789</p>
-                        <p>Correo: info@ejemplo.com</p>
-                    </div>
+        <div class="header-content">
+            <div class="container-burger-menu">
+                <button class="dropbtn"><img src="./assets/icons/burger-menu.png" alt="Menú Hamburguesa"></button>
+                <div class="dropdown-content">
+                    <h3>CONTACTO:</h3>
+                    <p>Teléfono: +123 456 789</p>
+                    <p>Correo: info@ejemplo.com</p>
                 </div>
-                <div class="title-header">
-                    <h1>TÍTULO</h1>
-                </div>
-            </nav>
+            </div>
+            <div class="header-title">
+                <h1>TÍTULO</h1>
+            </div>
         </div>
     </header>
-
     <main class="main">
-        <div class="container container-black container-menu-principal-sin-loggear">
-            <div class="main-title-sin-loggear">
-                <div class="title-sin-loggear-container">
-                    <h2>SLOGAN (Letra Chica SLO SLO)</h2>
-                    <a href="#" id="myBtn">LOG IN</a>
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                          <span class="close">&times;</span>
-                          <div class="container-title-login-pop-up">
-                              <h2>LOG IN</h2>
-                          </div>
-                          <div class="container-log-in-text">
-                              <p>TEXTO LOG IN can vary to support the types</p>
-                          </div>
-                          <div class="container-log-in-form">
-                            <form class="">
-                                <div class="form-group-w-bor form-group-white">
-                                    <div class="bg-label">
-                                        <label for="tlf">Teléfono</label>
-                                    </div>
-                                    <input type="tel" id="tlf" placeholder="Ejemplo Teléfono">
-                                </div>                                        
-                                <div class="form-group-w-bor form-group-white">
-                                    <div class="bg-label">
-                                        <label for="pass">Contraseña</label>
-                                    </div>
-                                    <input type="password" id="pass" placeholder="Ejemplo Contraseña">
-                                </div>
-                                <div class="container-forgot-password">
-                                    <a href="#">Olvidé mi Contraseña</a>
-                                </div>
-                                <div class="container-button">
-                                    <button class="btn btn-registro">Botón - Log in</button>
-                                </div>
-                                <div class="container-not-registered">
-                                    <a href="#">¿No estás registrado? Regístrate</a>
-                                </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+        <div class="main-content">
+            <div class="container-slogan-and-login">
+                <div class="slogan-content-sin-loggear">
+                    <p>SLOGAN (Letra Chica) SLO SLO</p>
                 </div>
-                <div class="line-bottom"></div>
-                <div class="container-philosophy-text">
-                    <p>FILOSOFÍA can vary to support the types of content they contain. The following elements are commonly. Lorem Ipsum</p>
+                <div class="log-ing-content">
+                    <button id='btnLogin' class="btn-log-in">LOG IN</button>
                 </div>
-                <div class="container-accordion">
-                    <button class="accordion accordion-datos">DATOS</button>
-                    <div class="panel panel-datos">
-                        <div class="tabs-container">
-                            <div class="tab subtitle-tab">
-                                <button class="tablinks style-subtitle" onclick="openCity(event, 'London')" id="defaultOpen">Subtítulo 1</button>
-                                <button class="tablinks style-subtitle" onclick="openCity(event, 'Paris')">Subtítulo 2</button>
-                            </div>
-                               
-                            <div id="London" class="tabcontent">
-                                <form class="form-datos">
-                                    <div class="form-group-w-bor form-group-white pb-0">
-                                        <div class="bg-label">
-                                            <label for="name">Dato 1A</label>
-                                        </div>
-                                        <input type="text" id="name" placeholder="Ejemplo Dato 1A">
-                                    </div>                                        
-                                    <div class="form-group-w-bor form-group-white pb-0">
-                                        <div class="bg-label">
-                                            <label for="name">Dato 1B</label>
-                                        </div>
-                                        <input type="text" id="name" placeholder="Ejemplo Dato 1B">
-                                    </div>
-                                    <div class="container-label-range">
-                                        <p>Cifra C</p>
-                                    </div>
-                                    <div class="container-range">
-                                        <div class="inputDiv">
-                                            <div id="etiqueta"></div>
-                                            <input type="range" value="35" min="0" max="100" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="container-button container-w-arrow">
-                                        <button class="btn btn-registro">Botón 1 de Datos</button>
-                                        <img src="./assets/icons/next-arrow.svg" alt="Flecha">
-                                    </div>
-                                </form>
-                            </div>
-                              
-                            <div id="Paris" class="tabcontent">
-                                <form class="form-datos">
-                                    <div class="form-group-w-bor form-group-white pb-0">
-                                        <div class="bg-label">
-                                            <label for="name">Dato 2A</label>
-                                        </div>
-                                        <input type="text" id="name" placeholder="Ejemplo Dato 2A">
-                                    </div>                                        
-                                    <div class="form-group-w-bor form-group-white pb-0">
-                                        <div class="bg-label">
-                                            <label for="name">Dato 2B</label>
-                                        </div>
-                                        <input type="text" id="name" placeholder="Ejemplo Dato 2B">
-                                    </div>
-                                    <div class="container-button container-w-arrow">
-                                        <button class="btn btn-registro">Botón 2 de Datos</button>
-                                        <img src="./assets/icons/next-arrow.svg" alt="Flecha">
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+            </div>
+            <div class="line-w-100">
+                    
+            </div>
+            <div class="philosophy-text">
+                <p>FILOSOFÍA can vary to support the types of content they contain. The following elements are commonly. Lorem Ipsum</p>
+            </div>
+            <div class="acordeon mt-15">
+                <div class="bloque">
+                  <button class="btnAccordeon btnDatos">DATOS</button>
+                  <div class="contenido">
+                                        
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Subtítulo 1</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Subtítulo 2</button>
                     </div>
-                </div>
-                <div class="menu-instruction-sin-loggear">
-                    <h3>INSTRUCCIONES MENÚ can vary to support the </h3>
-                    <p>PASO 1: The following elements are commonly.</p>
-                    <p>PASO 2: The following elements are commonly.</p>
-                </div>
-                <div class="container-accordion">
-                    <button class="accordion accordion-registro">REGISTRO</button>
-                    <div class="panel panel-registro">
-                        <div class="border-panel-registro">
-                            <form class="">
-                                <div class="form-group-w-bor form-group-black pb-0">
-                                    <div class="bg-label">
-                                        <label for="name">Nombre</label>
-                                    </div>
-                                    <input type="text" id="name" placeholder="Ejemplo Nombre">
-                                </div>                                        
-                                <div class="form-group-w-bor form-group-black pb-0">
-                                    <div class="bg-label">
-                                        <label for="tlf">No. teléfono</label>
-                                    </div>
-                                    <input type="tel" id="tlf" placeholder="Ejemplo de teléfono">
+                    
+                    <div id="London" class="tabcontent">
+                        <form>
+                            <div class="form-content">
+                                <div class="label-content">
+                                    <label for="data-1A">Dato 1A</label>
                                 </div>
-                                <div class="form-group-w-bor form-group-black pb-0">
-                                    <div class="bg-label">
-                                        <label for="pass">Contraseña</label>
-                                    </div>
-                                    <input type="password" id="pass" placeholder="Ejemplo de contraseña">
+                                <div class="input-content">
+                                    <input type="text" id="data-1A" placeholder="Ejemplo 1A">
                                 </div>
-                                <div class="container-not-robot">
-                                    <label for="robot">No soy un robot</label>
-                                    <input type="checkbox" name="robot" id="robot"  checked="checked">
-                                    <span class="checkmark"></span>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B">Dato 1B</label>
                                 </div>
-                                <div class="container-button container-w-arrow">
-                                    <button class="btn btn-registro">Botón 1 de Registro</button>
-                                    <img src="./assets/icons/next-arrow.svg" alt="Flecha">
+                                <div class="input-content">
+                                    <input type="text" id="data-1B" placeholder="Ejemplo 1B">
                                 </div>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B-bis">Dato 1B bis</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1B-bis" placeholder="Ejemplo 1B bis">
+                                </div>
+                            </div>
+                            <div class="content-btn mt-20 content-btn-w-img">
+                                <a href="#" class="btn-standar">Botón 1 de Datos</a>
+                                <div class="btn-arrow-right">
+                                    <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
+                    
+                    <div id="Paris" class="tabcontent">
+                        <form>
+                            <div class="form-content">
+                                <div class="label-content">
+                                    <label for="data-1A">Dato 2A</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-2A" placeholder="Ejemplo 2A">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B">Dato 2B</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-2B" placeholder="Ejemplo 2B">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-2B-bis">Dato 2B bis</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1B-bis" placeholder="Ejemplo 2B bis">
+                                </div>
+                            </div>
+                            <div class="content-btn mt-20 content-btn-w-img">
+                                <a href="#" class="btn-standar">Botón 2 de Datos</a>
+                                <div class="btn-arrow-right">
+                                    <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  <div class="container-close-accordeon">
+                    <img src="./assets/icons/row-up.svg" alt="Flecha Arriba">
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="instructions-menu-sin-loggear">
+                <p>INSTRUCCIONES MENÚ can vary to support the</p>
+                <p class="mt-10 mb-10">PASO 1: The following elements are commonly.</p>
+                <p>PASO 2: The following elements are commonly.</p>
+            </div>
+            <div class="acordeon">
+                <div class="bloque bloque-registro">
+                  <button class="btnAccordeonRegistro">REGISTRO</button>
+                  <div class="contenido-registro">
+                    <form>
+                        <div class="form-content form-content-bg-black">
+                            <div class="label-content">
+                                <label for="name-r">Nombre</label>
+                            </div>
+                            <div class="input-content">
+                                <input type="password" id="name-r" placeholder="Ejemplo Nombre">
+                            </div>
+                        </div>
+                        <div class="form-content mt-15 form-content-bg-black">
+                            <div class="label-content">
+                                <label for="tlf-r">No. Teléfono</label>
+                            </div>
+                            <div class="input-content">
+                                <input type="tel" id="tlf-r" placeholder="Ejemplo Teléfono">
+                            </div>
+                        </div>                        
+                        <div class="form-content mt-15 form-content-bg-black">
+                            <div class="label-content">
+                                <label for="pass-r">Contraseña</label>
+                            </div>
+                            <div class="input-content">
+                                <input type="password" id="pass-r" placeholder="Ejemplo Contraseña">
+                            </div>
+                        </div>
+                        <div class="container-not-robot">
+                            <label for="robot">No soy un robot</label>
+                            <input type="checkbox" name="robot" id="robot"  checked="checked">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="content-btn content-btn-w-img">
+                            <a href="#" class="btn-standar">Botón 1 de Registro</a>
+                            <div class="btn-arrow-right">
+                                <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                            </div>
+                        </div>
+                    </form>
+                  </div>
+                  <div class="arrow-up-registro">
+                    <img src="./assets/icons/arrow-up-white.svg" alt="Flecha Arriba">
+                  </div>
                 </div>
             </div>
         </div>
     </main>
-    
+    <div class="modal-login">
+        <div class="modal-container">
+            <div class="modal-title-login">
+                <h2>LOG IN</h2>
+            </div>
+            <div class="modal-text-login">
+                <p>TEXTO LOG IN can vary to support the types</p>
+            </div>
+            <form>
+                <div class="form-content">
+                    <div class="label-content">
+                        <label for="tlf">Teléfono</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="tel" id="tlf" placeholder="Ejemplo Teléfono">
+                    </div>
+                </div>
+                <div class="form-content mt-15">
+                    <div class="label-content">
+                        <label for="pass">Contraseña</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="password" id="pass" placeholder="Ejemplo Contraseña">
+                    </div>
+                </div>
+                <div class="content-forgot-password">
+                    <a href="#">Olvidé mi Contraseña</a>
+                </div>
+                <div class="content-btn mt-20">
+                    <a href="#" class="btn-standar">Botón - Log in</a>
+                </div>
+            </form>
+            <div class="not-registered">
+                <a href="#">¿No estás registrado? Regístrate</a>
+            </div>
+            <div class="close-modal">
+                <img src="./assets/icons/x.svg" alt="Cerrar Modal">
+            </div>
+        </div>
+    </div>
     <footer class="footer">
-
+        <div class="footer-content">
+            
+        </div>
     </footer>
-
-    <script src="./js/app.js"></script>
+    
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
