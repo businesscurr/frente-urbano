@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Document</title>
+    <title>Menú Principal sin Loggear</title>
 </head>
 <body>
     <header class="header">
@@ -19,6 +19,9 @@
                     <h3>CONTACTO:</h3>
                     <p>Teléfono: +123 456 789</p>
                     <p>Correo: info@ejemplo.com</p>
+                    <div class="img-adorno-contacto">
+                        <img src="./assets/imgs/adorno-contacto.png" alt="">
+                    </div>
                 </div>
             </div>
             <div class="header-title">
@@ -78,6 +81,15 @@
                                     <input type="text" id="data-1B-bis" placeholder="Ejemplo 1B bis">
                                 </div>
                             </div>
+                            <div class="container-label-range mt-15">
+                                <p>Cifra 1C</p>
+                            </div>
+                            <div class="container-range">
+                                <div class="inputDiv">
+                                    <div id="etiqueta"></div>
+                                    <input type="range" value="35" min="0" max="100" autocomplete="off">
+                                </div>
+                            </div>
                             <div class="content-btn mt-20 content-btn-w-img">
                                 <a href="#" class="btn-standar">Botón 1 de Datos</a>
                                 <div class="btn-arrow-right">
@@ -114,6 +126,15 @@
                                     <input type="text" id="data-1B-bis" placeholder="Ejemplo 2B bis">
                                 </div>
                             </div>
+                            <div class="container-label-range mt-15">
+                                <p>Cifra 2C</p>
+                            </div>
+                            <div class="container-range">
+                                <div class="inputDiv">
+                                    <div id="etiqueta"></div>
+                                    <input type="range" value="35" min="0" max="100" autocomplete="off" id="input-range-2c">
+                                </div>
+                            </div>
                             <div class="content-btn mt-20 content-btn-w-img">
                                 <a href="#" class="btn-standar">Botón 2 de Datos</a>
                                 <div class="btn-arrow-right">
@@ -129,15 +150,14 @@
                 </div>
             </div>
             <div class="instructions-menu-sin-loggear">
-                <p>INSTRUCCIONES MENÚ can vary to support the</p>
-                <p class="mt-10 mb-10">PASO 1: The following elements are commonly.</p>
-                <p>PASO 2: The following elements are commonly.</p>
+                <p>INSTRUCCIONES MENÚ can vary to support the <br> PASO 1: The following elements are commonly.
+                   <br>  PASO 2: The following elements are commonly.</p>
             </div>
             <div class="acordeon">
                 <div class="bloque bloque-registro">
                   <button class="btnAccordeonRegistro">REGISTRO</button>
                   <div class="contenido-registro">
-                    <form>
+                    <form id="hide-record-1">
                         <div class="form-content form-content-bg-black">
                             <div class="label-content">
                                 <label for="name-r">Nombre</label>
@@ -168,14 +188,38 @@
                             <span class="checkmark"></span>
                         </div>
                         <div class="content-btn content-btn-w-img">
-                            <a href="#" class="btn-standar">Botón 1 de Registro</a>
+                            <a href="#" class="btn-standar" id="btn-register-1">Botón 1 de Registro</a>
                             <div class="btn-arrow-right">
                                 <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
                             </div>
                         </div>
                     </form>
+                    <form id="hide-record-2">
+                        <div class="container-text-register-2">
+                            <p>TEXTO REGISTRO can vary to support the types of content they contain. The following elements are commonly. </p>
+                        </div>
+                        <div class="form-content form-content-bg-black">
+                            <div class="label-content">
+                                <label for="code-register">Código</label>
+                            </div>
+                            <div class="input-content">
+                                <input type="text" id="code-register" placeholder="Ejemplo Código">
+                            </div>
+                        </div>
+                        <div class="container-not-robot terms-conditions-container">
+                            <label for="terms-conditions" id="link-terms-conditions">Términos y Condiciones</label>
+                            <input type="checkbox" name="terms-conditions" id="terms-conditions"  checked="checked">
+                            <span class="checkmark"></span>
+                        </div>
+                        <div class="content-btn">
+                            <a href="#" class="btn-standar" id="btn-register-2">Botón 2 de Registro</a>
+                        </div>
+                    </form>
                   </div>
                   <div class="arrow-up-registro">
+                    <img src="./assets/icons/arrow-up-white.svg" alt="Flecha Arriba">
+                  </div>
+                  <div class="arrow-up-registro2" id="arrow-registro">
                     <img src="./assets/icons/arrow-up-white.svg" alt="Flecha Arriba">
                   </div>
                 </div>
@@ -208,7 +252,7 @@
                     </div>
                 </div>
                 <div class="content-forgot-password">
-                    <a href="#">Olvidé mi Contraseña</a>
+                    <a href="#" id="link-olvido-pass">Olvidé mi Contraseña</a>
                 </div>
                 <div class="content-btn mt-20">
                     <a href="#" class="btn-standar">Botón - Log in</a>
@@ -221,6 +265,72 @@
                 <img src="./assets/icons/x.svg" alt="Cerrar Modal">
             </div>
         </div>
+    </div>
+    <div class="modal-olvido-contrasena">
+        <div class="modal-container-olvido-contrasena">
+            <div class="title-olvido">
+                <h2>OLVIDO</h2>
+            </div>
+            <div class="container-text-olvido">
+                <p class="mb-6">TEXTO 1 de OLVIDO -Lorem ipsum dolor sit amet, consectetur adipisci elit. Qisque quis eros ex. Mauris tincunt elit non elivenenat, vel cursus quam commodo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Quisque quis eros ex. Mauris tincidunt.</p>
+            </div>
+            <form class="container-form-olvido-contrasenia">
+                <div class="form-content">
+                    <div class="label-content">
+                        <label for="tlf">Teléfono</label>
+                    </div>
+                    <div class="input-content">
+                        <input type="tel" id="tlf" placeholder="Ejemplo Teléfono">
+                    </div>
+                </div>
+            </form>
+            <div class="close-modal" id="close-modal-olvido-contrasenia">
+                <img src="./assets/icons/x.svg" alt="Cerrar Modal">
+            </div>
+            <div class="content-btn content-btn-olvido-pass">
+                <a href="#" class="btn-standar" id="btnHide1">Botón 1 de Olvido</a>
+                <div class="img-arrow-right">
+                    <img src="./assets/icons/arrow-right.svg" alt="Flecha">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-olvido-pass2">
+        <div class="modal-container-olvido-pass2">
+            <div class="title-olvido">
+                <h2>OLVIDO</h2>
+            </div>
+            <div class="container-text-olvido-pass2">
+                <p class="mb-6">TEXTO 2 de OLVIDO -Lorem ipsum dolor sit amet, consectetur adipisci elit. Qisque quis eros ex. Mauris tincunt elit non elivenenat, vel cursus quam commodo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Quisque quis eros ex. Mauris tincidunt elit non elit venenatis, vel cursus quam commodo. Fusce ullamcorper leo vehicula leo mattis molestie. Nam eget venenatis mi.</p>
+            </div>
+            <div class="content-btn content-btn-olvido-pass p-ab-15">
+                <a href="#" class="btn-standar">Botón 2 de Olvido</a>
+                <div class="img-arrow-right">
+                    <img src="./assets/icons/arrow-right.svg" alt="Flecha">
+                </div>
+            </div>
+            <div class="closeModalHidePass2">
+                <img src="./assets/icons/row-up.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="modal-terms-and-conditions">
+        <div class="main-content-terms-and-conditions">
+            <div class="title-terms-conditions-modal">
+                <h3>TÉRMINOS Y CONDICIONES</h3>
+            </div>
+            <div class="closeModalTermsConditions">
+                <img src="./assets/icons/x.svg" alt="Close">
+            </div>
+            <div class="content-text-modal-terms-conditions mt-15">
+                <p class="mb-6">TEXTO TÉRMINOS Y CONDICIONES -Lorem ipsum dolor sit amet, consectetur adipisci elit. Quisque quis eros ex. Mauris tincidunt elit non elit venenat, vel cursus quam commodo.</p>
+                <p class="mb-6">Lorem ipsum dolor sit amet, consectetur adipisci elit. Quisque quis eros ex. Mauris tincidunt elit non elit venenatis, vel cursus quam commodo. Fusce ullamcorper leo vehicula leo mattis molestie. Nam eget venenatis mi.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit. Quisque quis eros ex. Mauris tincidunt elit non elit venenatis, vel cursus quam commodo. Fusce ullamcorper leo vehicula leo mattis molestie. Nam eget venenatis mi.</p>
+            </div>
+        </div>
+
     </div>
     <footer class="footer">
         <div class="footer-content">

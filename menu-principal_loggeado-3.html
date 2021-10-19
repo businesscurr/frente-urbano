@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Menú Principal Loggeado 3</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content header-content-w-lg">
+            <div class="container-burger-menu">
+                <button class="dropbtn"><img src="./assets/icons/burger-menu.png" alt="Menú Hamburguesa"></button>
+                <div class="dropdown-content">
+                    <h3>CONTACTO:</h3>
+                    <p>Teléfono: +123 456 789</p>
+                    <p>Correo: info@ejemplo.com</p>
+                    <div class="img-adorno-contacto">
+                        <img src="./assets/imgs/adorno-contacto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>TÍTULO</h1>
+            </div>
+            <div class="log-out-content">
+                <button id='btnLogin' class="btn-log-out">LOG OUT</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-content">
+            <div class="center-slogan">
+                <p>SLOGAN (Letra Chica) SLO SLO SLO</p>
+            </div>
+            <div class="acordeon mt-15">
+                <div class="bloque bloque-datos-f">
+                  <button class="btnAccordeon btnDatos">DATOS</button>
+                  <div class="contenido">
+                                        
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Subtítulo 1</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Subtítulo 2</button>
+                    </div>
+                    
+                    <div id="London" class="tabcontent">
+                        <form>
+                            <div class="form-content">
+                                <div class="label-content">
+                                    <label for="data-1A">Dato 1A</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1A" placeholder="Ejemplo 1A">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B">Dato 1B</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1B" placeholder="Ejemplo 1B">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B-bis">Dato 1B bis</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1B-bis" placeholder="Ejemplo 1B bis">
+                                </div>
+                            </div>
+                            <div class="container-label-range mt-15">
+                                <p>Cifra 1C</p>
+                            </div>
+                            <div class="container-range">
+                                <div class="inputDiv">
+                                    <div id="etiqueta"></div>
+                                    <input type="range" value="35" min="0" max="100" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="content-btn mt-20 content-btn-w-img">
+                                <a href="#" class="btn-standar">Botón 1 de Datos</a>
+                                <div class="btn-arrow-right">
+                                    <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    
+                    <div id="Paris" class="tabcontent">
+                        <form>
+                            <div class="form-content">
+                                <div class="label-content">
+                                    <label for="data-1A">Dato 2A</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-2A" placeholder="Ejemplo 2A">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-1B">Dato 2B</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-2B" placeholder="Ejemplo 2B">
+                                </div>
+                            </div>
+                            <div class="form-content mt-15">
+                                <div class="label-content">
+                                    <label for="data-2B-bis">Dato 2B bis</label>
+                                </div>
+                                <div class="input-content">
+                                    <input type="text" id="data-1B-bis" placeholder="Ejemplo 2B bis">
+                                </div>
+                            </div>
+                            
+                            <div class="container-label-range mt-15">
+                                <p>Cifra 2C</p>
+                            </div>
+                            <div class="container-range">
+                                <div class="inputDiv">
+                                    <div id="etiqueta"></div>
+                                    <input type="range" value="35" min="0" max="100" autocomplete="off" id="input-range-2c">
+                                </div>
+                            </div>
+                            <div class="content-btn mt-20 content-btn-w-img">
+                                <a href="#" class="btn-standar">Botón 2 de Datos</a>
+                                <div class="btn-arrow-right">
+                                    <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                  <div class="container-close-accordeon">
+                    <img src="./assets/icons/row-up.svg" alt="Flecha Arriba">
+                </div>
+                  </div>
+                  <div class="container-photo-profile">
+                      <a href="./perfil_una-foto.html">
+                          <img src="./assets/imgs/img-datos.png" alt="Foto de Perfil">
+                      </a>
+                  </div>
+                </div>
+            </div>
+            <div class="accordeon-listado mt-10">
+                <div class="bloque-listado">
+                    <button class="btn-listado" id="btn-listado">LISTADO</button>
+                    <div class="open-accordeon-listado">
+                        <img src="./assets/icons/row-up.svg" alt="Cerrar Accordeon">
+                    </div>
+                    <div class="content-listado">
+                        <div class="bloque-card-listado">
+                            <div class="card-listado">
+                                <div class="card-listado-text">
+                                    <p class="mb-3">Dato 1A, Dato 1A, Dato Dato Dato <br>
+                                        Dato 1A</p>
+                                    <p class="mb-3">Dato 1B, Dato 1B, Dato 1B ddwdss...</p>
+                                    <p>Cifra 1C</p>
+                                </div>
+                                <div class="card-listado-img">
+                                    <img src="./assets/imgs/img-man.png" alt="img listado">
+                                </div>
+                                <div class="arrow-down-listado">
+                                    <img src="./assets/icons/arrow-down-listado.svg" alt="Flecha">
+                                </div>
+                                <div class="acordeon-action-card-listado"></div>
+                                <div class="acordeon-action-card-listado-2"></div>
+                            </div>
+                            <div class="contenido-card-listado">
+                                <div class="content-card-listado-proflie">
+                                    <div class="line-w-contenido-listado">
+                                    </div>
+                                    <div class="container-arrow-up-listado">
+                                        <img src="./assets/icons/arrow-up.svg" alt="Cerrar listado">
+                                    </div>
+                                    <h3>NOMBRE</h3>
+                                    <p>DESCRIPCIÓN: layouts can vary to support the types of content they contain. The following elements are commonly found among that variety.The following elements are commonly found among that variety.</p>
+                                    <div class="container-link-card-listado-profile">
+                                        <a href="#">www.paginaweb.com</a>
+                                    </div>
+                                    <div class="container-link-card-listado-profile">
+                                        <a href="#">www.paginaweb.com</a>
+                                    </div>
+                                    <div class="container-link-card-listado-profile">
+                                        <a href="#">www.paginaweb.com</a>
+                                    </div>
+                                    <div class="content-btn mt-15 mb-15">
+                                        <a href="#" class="btn-standar">Botón con Detalles</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordeon-mensajes mt-10">
+                <div class="bloque-mensajes">
+                    <button class="btn-mensajes">MENSAJES</button>
+                    <div class="closeMensajes">
+                        <img src="./assets/icons/row-up.svg" alt="Cerrar">
+                    </div>
+                    <div class="content-mensajes">
+                        <div class="container-msj">
+                            <div class="container-profile-msj">
+                                <div class="left-profile-msj">
+                                    <div class="profile-msj_name">
+                                        <h3>NOMBRE</h3>
+                                    </div>
+                                    <div class="profile-msj_datos">
+                                        <p>Dato 1A, Dato 1A, Dato 1A, Dato 1A Da...</p>
+                                        <p>Dato 1B, Dato 1B, Dato 1B...</p>
+                                    </div>
+                                </div>
+                                <div class="right-profile-msj">
+                                    <div class="profile-msj_img">
+                                        <img src="./assets/imgs/img-msj.png" alt="Foto Perfil">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-record-msjs">
+                                <div class="date-msj_datos">
+                                    <p>09 / 08 / 2021</p>
+                                </div>
+                                <div class="content-record-msjs">
+                                    <div class="style-msj-received">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-send">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-received">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-received">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-send mb-4_5">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-send">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-received">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                    <div class="style-msj-send">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo vestibu orci in dignissim.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-send-msjs">
+                                <div class="container-w-msj">
+                                    <div class="container-w-msj-inputText">
+                                        <input type="text" placeholder="Escribir Mensaje">
+                                    </div>
+                                    <div class="container-w-msj-button">
+                                        <button>Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="texto-1-donar">
+                <p>TEXTO 1 DONAR can vary to support</p>
+            </div>
+            <div class="accordeon-donar">
+                <div class="bloque-donar">
+                    <button class="btn-donar">DONAR</button>
+                    <div class="close-btn-donar">
+                        <img src="./assets/icons/row-up.svg" alt="Cerrar">
+                    </div>
+                    <div class="content-btn-donar">
+                        <div class="main-content-btn-donar">
+                            <div class="content-btn-donar1">
+                                <div class="text-1-donar">
+                                    <p>TEXTO 2 DONAR layouts can vary to support t they contain. The following elements are commonly found following elements are commonly found The following elements are commonly found 
+                                    <br> following elements are commonly found The <br> following elements are commonly found <br> following elements are commonly found </p>
+                                </div>
+                                <div class="container-label-range mt-15">
+                                    <p>Cifra Donar</p>
+                                </div>
+                                <div class="container-range">
+                                    <div class="inputDiv">
+                                        <div id="etiqueta"></div>
+                                        <input type="range" value="35" min="0" max="100" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="content-btn content-btn-w-img btn-donar-w-absolute">
+                                    <a href="#" class="btn-standar" id="btn1DeDonar">Botón 1 de Donar</a>
+                                    <div class="btn-arrow-right">
+                                        <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-btn-donar2">
+                                <div class="text-1-donar text2Donar">
+                                    <p>TEXTO 3 DONAR layouts can vary to support the types of content they contain. The following elements are commonly found following elements are commonly found </p>
+                                </div>
+                                <div class="container-code-donar">
+                                    <p>CX8910JMSDSDSJNDSJN2</p>
+                                </div>
+                                <div class="content-btn content-btn-w-img btn-donar-w-absolute">
+                                    <a href="#" class="btn-standar" id="btn2DeDonar">Botón 2 de Donar</a>
+                                    <div class="btn-arrow-right">
+                                        <img src="./assets/icons/arrow-right.svg" alt="Flecha a la Derecha">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal-login">
+        <div class="modal-container">
+            <div class="modal-title-logout">
+                <h2>LOG OUT</h2>
+            </div>
+            <div class="modal-text-logut">
+                <p>TEXTO LOG OUT can vary to support the types of content they contain.</p>
+            </div>
+            <div class="content-btn">
+                <a href="#" class="btn-standar">Botón - Log out</a>
+            </div>
+            <div class="close-modal">
+                <img src="./assets/icons/x.svg" alt="Cerrar Modal">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            
+        </div>
+    </footer>
+    
+    <script src="./js/scripts.js"></script>
+    <script>
+        let btnListado = document.querySelector('#btn-listado'),
+            contentLlistado = document.querySelector('.content-listado'),
+            openAccordeonListado = document.querySelector('.open-accordeon-listado'),
+            acordeonActionCardListado = document.querySelector('.acordeon-action-card-listado'),
+            acordeonActionCardListado2 = document.querySelector('.acordeon-action-card-listado-2'),
+            contentCardListadoProflie = document.querySelector('.content-card-listado-proflie'),
+            arrowDownListado          = document.querySelector('.arrow-down-listado'),
+            contentBtnDonar           = document.querySelector('.content-btn-donar'),
+            btnDonar                  = document.querySelector('.btn-donar'),
+            closeBtnDonar             = document.querySelector('.close-btn-donar'),
+            containerMsj              = document.querySelector('.container-msj'),
+            btnMensajes               = document.querySelector('.btn-mensajes'),
+            claseMsj                  = document.querySelector('.closeMensajes'),
+            btn1DeDonar               = document.querySelector('#btn1DeDonar'),
+            contentBtnDonar2          = document.querySelector('.content-btn-donar2'),
+            contentBtnDonar1          = document.querySelector('.content-btn-donar1');
+
+
+
+        btnListado.addEventListener('click', ()=> {
+            contentLlistado.classList.add('d-block');
+            openAccordeonListado.classList.add('d-block');
+        });
+
+        openAccordeonListado.addEventListener('click', () => {
+            contentLlistado.classList.remove('d-block');
+            openAccordeonListado.classList.remove('d-block');
+        });
+
+        acordeonActionCardListado.addEventListener('click', () => {
+            contentCardListadoProflie.classList.add('d-block');
+            arrowDownListado.classList.add('d-none');
+            acordeonActionCardListado2.classList.add('d-block');
+        });
+
+        acordeonActionCardListado2.addEventListener('click', () => {
+            contentCardListadoProflie.classList.remove('d-block');
+            arrowDownListado.classList.remove('d-none');
+            acordeonActionCardListado2.classList.remove('d-block');
+        });
+
+        btnDonar.addEventListener('click', () => {
+            contentBtnDonar.classList.add('d-block')
+            closeBtnDonar.classList.add('d-flex');
+        });
+
+        closeBtnDonar.addEventListener('click', () => {
+            contentBtnDonar.classList.remove('d-block')
+            closeBtnDonar.classList.remove('d-flex');
+        });
+
+        btnMensajes.addEventListener('click', () => {
+            containerMsj.classList.add('d-block');
+            claseMsj.classList.add('d-flex')
+        });
+
+        claseMsj.addEventListener('click', () => {
+            containerMsj.classList.remove('d-block');
+            claseMsj.classList.remove('d-flex');
+        });
+
+        btn1DeDonar.addEventListener('click', () => {
+            contentBtnDonar2.classList.add('d-block');
+            contentBtnDonar1.classList.add('d-none')
+        });
+    </script>
+</body>
+</html>

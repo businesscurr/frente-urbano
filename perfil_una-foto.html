@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content header-content-w-lg">
+            <div class="container-burger-menu">
+                <button class="dropbtn"><img src="./assets/icons/burger-menu.png" alt="Menú Hamburguesa"></button>
+                <div class="dropdown-content">
+                    <h3>CONTACTO:</h3>
+                    <p>Teléfono: +123 456 789</p>
+                    <p>Correo: info@ejemplo.com</p>
+                    <div class="img-adorno-contacto">
+                        <img src="./assets/imgs/adorno-contacto.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="header-title">
+                <h1>TÍTULO</h1>
+            </div>
+            <div class="log-out-content">
+                <button id='btnLogin' class="btn-log-out">LOG OUT</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-content">
+            <div class="main-content-white">
+                <div class="close-page-profile">
+                    <a href="./menu-principal_loggeado-3.html">
+                        <img src="./assets/icons/x.svg" alt="Cerrar Pantalla">
+                    </a>
+                </div>
+                <div class="container-title-profile">
+                    <h2>PERFIL</h2>
+                </div>
+                <div class="introductions-profile">
+                    <p>INSTRUCCIONES PERFILcan vary to support the types of content they contain. The following elements are commonly.</p>
+                </div>
+                <div class="container-img-profile">
+                    <a href="#">
+                        <img src="./assets/imgs/user-img.png" alt="Foto de Perfil">
+                    </a>
+                    <a class="link-plus-img-profile" id="link-pop-up-img-profile">
+                        <div class="circle-link-plus-img-profile">
+                            <img src="./assets/icons/plus_img.svg" alt="Link img">
+                        </div>
+                    </a>
+                </div>
+                <form>
+                    <div class="form-content mt-15">
+                        <div class="label-content">
+                            <label for="name-profile">Nombre</label>
+                        </div>
+                        <div class="input-content">
+                            <input type="text" id="name-profile" placeholder="Ejemplo Nombre">
+                        </div>
+                    </div>
+                    <div class="form-content form-content-textarea mt-15">
+                        <div class="label-content">
+                            <label for="descripcion-profile">Descripción</label>
+                        </div>
+                        <div class="text-area-content">
+                            <textarea id="descripcion-profile" placeholder="Ejemplo Descripción"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <div class="instruction-links-profile mt-15">
+                    <p>Instrucciones Links Lorem ipsum dolor sit amet, consectetur adipisci elit.</p>
+                </div>
+                <form>
+                    <div class="form-content mt-15">
+                        <div class="input-content">
+                            <input type="text" placeholder="Ejemplo Link Facebook">
+                        </div>
+                    </div>
+                    <div class="form-content mt-10">
+                        <div class="input-content">
+                            <input type="text" placeholder="Ejemplo Link Instagram">
+                        </div>
+                    </div>
+                    <div class="form-content mt-10">
+                        <div class="input-content">
+                            <input type="text" placeholder="Ejemplo Link LinkedIn">
+                        </div>
+                    </div>
+                    <div class="form-content mt-10">
+                        <div class="input-content">
+                            <input type="text" placeholder="Ejemplo Link Otro">
+                        </div>
+                    </div>
+                </form>
+                <div class="plus-2-profile">
+                    <img src="./assets/icons/plus-2.svg" alt="Plus 2" class="mt-15">
+                </div>
+                <div class="content-btn mt-15">
+                    <a href="#" class="btn-standar">Guardar Cambios</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="modal-profile-img">
+        <div class="content-modal-profile-img">
+            <a href="#" class="closed-modal-profile-img">
+                <img src="./assets/icons/x.svg" alt="Cerrar Modal">
+            </a>
+            <div class="container-img-profile-userx2">
+                <img src="./assets/imgs/user-imgx2.png" alt="Imagen de Perfil">
+            </div>
+            <div class="container-btn-modal-profile-img">
+                <a href="#">Agregar</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal-login">
+        <div class="modal-container">
+            <div class="modal-title-logout">
+                <h2>LOG OUT</h2>
+            </div>
+            <div class="modal-text-logut">
+                <p>TEXTO LOG OUT can vary to support the types of content they contain.</p>
+            </div>
+            <div class="content-btn">
+                <a href="#" class="btn-standar">Botón - Log out</a>
+            </div>
+            <div class="close-modal">
+                <img src="./assets/icons/x.svg" alt="Cerrar Modal">
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            
+        </div>
+    </footer>
+    
+    <script src="./js/scripts.js"></script>
+    <script>
+        
+    let linkPopUpImgProfile     = document.querySelector('#link-pop-up-img-profile'),
+        modalProfileImg         = document.querySelector('.modal-profile-img'),
+        closedModalProfileImg   = document.querySelector('.closed-modal-profile-img')
+
+
+        linkPopUpImgProfile.addEventListener('click', () => {
+            modalProfileImg.classList.add('d-flex');
+        });
+
+        closedModalProfileImg.addEventListener('click', () => {
+            modalProfileImg.classList.remove('d-flex');
+        });
+    </script>
+</body>
+</html>
